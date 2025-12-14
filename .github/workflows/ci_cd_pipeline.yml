@@ -28,7 +28,7 @@ jobs:
           pip install pytest  # Ensure pytest is installed 
 
       - name: Run tests 
-        run: | pytest tests/ -v
+        run: pytest tests/ -v
 
       - name: Deploy
         if: github.ref == 'refs/heads/main' 
